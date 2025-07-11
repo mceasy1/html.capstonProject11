@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Background Image Test</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    body {
+      color: #40514e;
+      margin: 0;
+      text-align: center;
+      font-family: "Merriweather", serif;
+    }
+
+    h1 {
+      color: #66bfbf;
+      font-size: 5.625rem;
+      font-family: "Sacramento", cursive;
+      margin: 0;
+      padding-top: 40px;
+    }
+
+    h2 {
+      color: #66bfbf;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5rem;
+      font-weight: normal;
+      margin: 0;
+      padding-top: 20px;
+    }
+    .pro {
+    text-decoration: underline;
+}
+    p {
+      line-height: 2;
+      color: rgb(64, 81, 78);
+    }
+
+    .con1 {
+      width: 100%;
+      height: 100vh;
+      background: url('image/2.jpg') center/100% 100% no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .con2, .con3, .con4, .con5 {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      padding-top: 100px;
+    }
+
+    .con2 img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    .con4 img{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 50px;
+    }
+    .con3 img {
+      padding-top: 70px;
+    }
+
+    .con2 h1,
+    .con3 h1,
+    .con4 h1,
+    .con5 h1 {
+      font-size: 40px;
+      font-family: "Montserrat", sans-serif;
+      margin-top: 0;
+      padding-top: 10px;
+    }
+
+    .con5 h3 {
+      color: #11999e;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .btn {
+      background: linear-gradient(to bottom, #11cdd4, #11999e);
+      border-radius: 8px;
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff;
+      font-size: 20px;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    a {
+      color: #11999e;
+      font-family: "Montserrat", sans-serif;
+      text-decoration: none;
+      margin: 10px 20px;
+    }
+
+    a:hover {
+      color: #eaf6f6;
+    }
+
+    .footer {
+      background-color: #66bfbf;
+      padding: 50px 0 20px;
+    }
+
+    .footer-link {
+      color: #11999e;
+      margin: 10px;
+      font-family: "Montserrat", sans-serif;
+      text-decoration: none;
+    }
+
+    .footer-link:hover {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+    
+    cursor: pointer;
+    }
+
+    .copyright {
+      color: #eaf6f6;
+      font-size: 0.75rem;
+      padding: 20px 0;
+    }
+    /* Extra small devices (phones, less than 576px) */
+ @media (min-width: 300px) and (max-width: 800px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    color: #40514e;
+    text-align: center;
+    overflow-x: hidden; /* prevent horizontal scroll */
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container, .con1, .con2, .con3, .con4, .con5 {
+    width: 100%;
+    overflow-x: hidden;
+  }
+   .footer {
+      background-color: #66bfbf;
+      padding: 50px 0 20px;
+    }
+}
+
+
+
+
+@media (min-width: 853px) and (max-width: 1280px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    color: #40514e;
+    text-align: center;
+    overflow-x: hidden;
+    height: auto;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container, .con1, .con2, .con3, .con4, .con5 {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Ensure footer styles here or inherit global */
+  .footer {
+    background-color: #66bfbf;
+    padding-bottom: 130px;
+  }
+}
+ 
+
+@media (min-width: 912px) and (max-width: 1368px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    color: #40514e;
+    text-align: center;
+    overflow-x: hidden;
+    height: auto;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container, .con1, .con2, .con3, .con4, .con5 {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Ensure footer styles here or inherit global */
+  .footer {
+    background-color: #66bfbf;
+    padding-bottom: 200px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="con1">
+    <h1>I'm</h1>
+    <h1>Abdulwali.</h1>
+    <h2>a <span class="pro">pro</span>grammer.</h2>
+  </div>
+
+  <div class="con2">
+    <img src="image/01.jpg" alt="Profile Picture"><br>
+    <h1>Hello</h1>
+    <p>I am a Python and web developer, also known as <strong>mceazy1</strong>.</p>
+    <p>You can find me on Facebook as <strong>mceazyblingz</strong>.</p>
+    <p>I love ❤️ my space and prefer to keep things private.</p>
+  </div>
+
+  <div class="con3">
+    <h1>My Skills</h1>
+    <img src="image/th.jpeg" alt="Coding Illustration">
+    <h2>Design & Development</h2><br>
+    <p>I started learning to code in 2021 during my industrial work experience scheme because I wanted to gain a valuable skill.</p>
+    <p>Over time, I was able to design multiple websites through self-paced learning and various online resources.</p>
+  </div>
+
+  <div class="con4">
+    <h1>Peppered Meat Challenge</h1>
+    <img src="image/OIP.webp" alt="Peppered Meat"><br>
+    <p>My best skill is actually eating peppered meat.</p>
+    <p>I am the undisputed king of peppered meat challenges.</p>
+    <p>Ram, peppers, and chicken are my favorite meals.</p>
+  </div>
+
+  <div class="con5">
+    <h1>Get In Touch</h1>
+    <h3>If you love peppered meat as much as I do...</h3>
+    <p>Love peppered meat as much as I do?</p>
+    <p>Let’s talk about how awesome it is!</p>
+    <p>We can even code while enjoying some delicious peppered meat!</p>
+    <a class="btn" href="mailto:ilove@hotwings.com">CONTACT ME</a>
+  </div>
+
+  <div class="footer">
+    <a class="footer-link" href="https://www.linkedin.com/in/abdulwali-isah-9855302ab/">LinkedIn</a>
+    <a class="footer-link" href="https://x.com/AbdulwaliI18176">Twitter</a>
+    <a class="footer-link" href="https://mceasy1.github.io/Abutech//">Website</a>
+    <p class="copyright">© Abdulwali @ mceazy001@gmail.com</p>
+  </div>
+</body>
+</html>
